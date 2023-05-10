@@ -1,0 +1,5 @@
+from pydub import AudioSegment
+src="hello.mp3"
+dst="out.wav"
+sound=AudioSegment.from_mp3(src)
+sound.export(dst,format="wav")
